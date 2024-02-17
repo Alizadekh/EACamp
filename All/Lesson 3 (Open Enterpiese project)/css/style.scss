@@ -157,6 +157,47 @@ main {
         letter-spacing: -0.36px;
       }
     }
+    .right {
+      .member-box {
+        padding: 32px 40px;
+        border-radius: 16px;
+        border: 4px solid #303031;
+        background: #fff;
+        padding-right: 240px;
+        > p {
+          font-family: Roboto;
+          font-size: 32px;
+          font-weight: 700;
+          margin-bottom: 40px;
+        }
+        .member {
+          width: 200px;
+          margin-bottom: 12px;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          .profile-picture {
+            img {
+              border-radius: 50%;
+            }
+          }
+          .profile-info {
+            p:first-child {
+              font-family: Roboto;
+              font-size: 24px;
+              font-style: italic;
+              font-weight: 100;
+            }
+            p:last-child {
+              font-family: Roboto;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
   }
   .section-4 {
     padding: 95px 56px;
@@ -182,6 +223,82 @@ main {
         letter-spacing: -0.36px;
       }
     }
+    .left {
+      .member-box {
+        padding: 32px 40px;
+        border-radius: 16px;
+        border: 4px solid #303031;
+        background: #fff;
+
+        > p {
+          font-family: Roboto;
+          font-size: 32px;
+          font-weight: 700;
+          margin-bottom: 40px;
+        }
+        .member {
+          width: 400px;
+          margin-bottom: 12px;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          .profile-picture {
+            img {
+              border-radius: 50%;
+            }
+          }
+          .profile-info {
+            p:first-child {
+              font-family: Roboto;
+              font-size: 24px;
+              font-style: italic;
+              font-weight: 100;
+            }
+            p:last-child {
+              font-family: Roboto;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+            }
+          }
+        }
+        p {
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .stats {
+          margin-bottom: 32px;
+          width: 70%;
+          display: flex;
+          justify-content: space-between;
+          p:first-child {
+            margin-bottom: 15px;
+            color: #66645e;
+            font-family: Roboto;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+          }
+          p:last-child {
+            color: var(--Black, #303031);
+            font-family: Roboto;
+            font-size: 24px;
+            font-weight: 500;
+          }
+        }
+        button {
+          width: 100%;
+          padding: 12px 24px;
+          border-radius: 16px;
+          background: #303031;
+          color: #ffffff;
+          font-family: Roboto;
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
+    }
   }
   .section-5 {
     padding: 95px 56px;
@@ -204,6 +321,131 @@ main {
         font-size: 18px;
         font-weight: 400;
         letter-spacing: -0.36px;
+      }
+    }
+    .right {
+      .all-boxes {
+        .top-box {
+          width: 700px;
+          padding: 24px 60px;
+          border-radius: 16px;
+          border: 4px solid #303031;
+          background: #fff;
+          display: flex;
+          gap: 26px;
+          align-items: start;
+          margin-bottom: 15px;
+          .info {
+            margin-bottom: 24px;
+            p:first-child {
+              font-family: Roboto;
+              font-size: 18px;
+              font-weight: 700;
+              margin-bottom: 16px;
+            }
+            p:last-child {
+              font-family: Roboto;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+            }
+          }
+          button {
+            width: 30%;
+            padding: 4px 8px;
+            border-radius: 40px;
+            background: #71a894;
+            color: #fff;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 500;
+            border: none;
+          }
+        }
+        .bottom-boxes {
+          display: flex;
+          gap: 15px;
+          .box-1 {
+            padding: 32px;
+            border-radius: 16px;
+            border: 4px solid #303031;
+            background: #f3f0ea;
+            padding-right: 200px;
+            > p {
+              font-family: Roboto;
+              font-size: 24px;
+              font-weight: 700;
+              margin-bottom: 14px;
+            }
+            .member {
+              width: 200px;
+              margin-bottom: 12px;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              .profile-picture {
+                img {
+                  width: 40px;
+                  border-radius: 50%;
+                }
+              }
+              .profile-info {
+                p:first-child {
+                  font-family: Roboto;
+                  font-size: 20px;
+                  font-style: italic;
+                  font-weight: 100;
+                }
+              }
+            }
+          }
+          .box-2 {
+            width: 40%;
+            border-radius: 16px;
+            border: 4px solid #71a894;
+            background: #fff;
+            padding: 24px;
+            .pp {
+              display: flex;
+              justify-content: center;
+              img {
+                border-radius: 50%;
+                margin-bottom: 16px;
+              }
+            }
+            .name {
+              text-align: center;
+              font-family: Roboto;
+              font-size: 20px;
+              font-weight: 700;
+              margin-bottom: 8px;
+            }
+            .prof {
+              text-align: center;
+              font-family: Roboto;
+              font-size: 16px;
+              font-weight: 500;
+              margin-bottom: 24px;
+            }
+            span {
+              font-family: Roboto;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+            }
+            button {
+              width: 100%;
+              padding: 12px 24px;
+              margin-top: 16px;
+              border-radius: 16px;
+              background: #303031;
+              color: #ffffff;
+              font-family: Roboto;
+              font-size: 16px;
+              font-weight: 500;
+            }
+          }
+        }
       }
     }
   }
