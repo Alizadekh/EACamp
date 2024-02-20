@@ -1,0 +1,48 @@
+section {
+  padding-top: 150px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+}
+section div {
+  width: 7%;
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 24px;
+  color: white;
+  box-shadow: 1px 1px 0px 2px rgba(131, 131, 131, 0.2);
+}
+section div:nth-child(1) {
+  background-color: red;
+}
+section div:nth-child(2) {
+  background-color: rgb(0, 85, 255);
+}
+section div:nth-child(3) {
+  background-color: rgb(17, 210, 27);
+}
+section div:nth-child(4) {
+  background-color: yellow;
+}
+section div:nth-child(5) {
+  background-color: pink;
+}
+section div:nth-child(6) {
+  background-color: violet;
+}
+section div:nth-child(7) {
+  background-color: orange;
+  margin-top: 100px;
+}
+section div:nth-child(8) {
+  background-color: rgb(0, 247, 255);
+  margin-top: 100px;
+}
+section div:nth-child(9) {
+  background-color: green;
+  margin-top: 100px;
+}

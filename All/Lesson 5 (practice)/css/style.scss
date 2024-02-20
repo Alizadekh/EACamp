@@ -1,0 +1,240 @@
+header {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  nav {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    ul {
+      display: flex;
+      gap: 40px;
+      font-size: 18px;
+      li a {
+        color: #4a6279;
+        &:hover {
+          color: orange;
+        }
+      }
+      li:first-child a {
+        color: #8c71c4;
+      }
+    }
+  }
+}
+/* Header End */
+
+main {
+  .section-1 {
+    width: 100%;
+    background-image: url("https://assets.nicepagecdn.com/11a8ddce/4242949/images/Untitled-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    .container {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      padding: 80px 0;
+      img {
+        width: 50%;
+      }
+      .right {
+        h1 {
+          font-size: 3.8rem;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+          font-weight: 700;
+        }
+        p {
+          font-size: 1.25rem;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+          margin: 20px 0;
+        }
+        .email_input {
+          padding: 20px;
+          background-color: #f2f2f2;
+          display: flex;
+          gap: 15px;
+          justify-content: space-between;
+          input {
+            width: 75%;
+            padding: 15px;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 300;
+          }
+          button {
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+              "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+              "Helvetica Neue", sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            text-align: center;
+            align-self: center;
+            padding: 15px;
+            width: 22%;
+            cursor: pointer;
+            border: none;
+            border-radius: 20px;
+            background-color: #876cc4;
+          }
+        }
+        .phone {
+          margin-top: 40px;
+          display: flex;
+          gap: 25px;
+          align-items: start;
+          .icon {
+            padding: 20px;
+            border-radius: 20px;
+            background-color: orange;
+            i {
+              color: white;
+              font-size: 32px;
+            }
+          }
+          .info-tel {
+            h2 {
+              font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                "Helvetica Neue", sans-serif;
+              font-size: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-2 {
+    padding: 80px;
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .section-3 {
+    padding: 80px 0;
+    background-color: #f4f8fb;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .left {
+        width: 40%;
+        h1 {
+          font-size: 3rem;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+          margin: 40px 0;
+          font-weight: 400;
+        }
+        p {
+          font-size: 1.125rem;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+        }
+        button {
+          margin-top: 40px;
+          border: none;
+          outline: none;
+          padding: 20px 40px;
+          background-color: #876cc4;
+          color: white;
+          font-size: 18px;
+          border-radius: 20px;
+          margin-bottom: 50px;
+        }
+      }
+      .right {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        .box {
+          padding: 60px 20px;
+          width: 47%;
+          text-align: center;
+          background-color: white;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+          border-radius: 20px;
+          box-shadow: -2px 1px 30px -8px rgba(42, 41, 41, 0.75);
+          -webkit-box-shadow: -2px 1px 30px -8px rgba(42, 41, 41, 0.75);
+          -moz-box-shadow: -2px 1px 30px -8px rgba(42, 41, 41, 0.75);
+          .icon {
+            display: inline-block;
+            padding: 10px;
+            background-color: orange;
+            border-radius: 50%;
+            margin-bottom: 30px;
+            i {
+              font-size: 32px;
+              color: white;
+            }
+          }
+          h3 {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .section-4 {
+    width: 100%;
+    background-image: url("https://assets.nicepagecdn.com/11a8ddce/4242949/images/Untitled-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    .container {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      padding: 80px 0;
+      img {
+        width: 50%;
+      }
+      .right {
+        h1 {
+          font-size: 3rem;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+          font-weight: 500;
+        }
+        p {
+          font-size: 1.25rem;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+          margin: 20px 0;
+        }
+        .phone {
+          button {
+            margin-top: 40px;
+            border: none;
+            outline: none;
+            padding: 20px 40px;
+            background-color: #876cc4;
+            color: white;
+            font-size: 18px;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
