@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let studentWithPoints = [
+        ["David", 80],
+        ["Vino", 77],
+        ["Divya", 88],
+        ["Ishitha", 95],
+        ["Thomas", 68],
+      ];
+      let points = [];
+      for (let i = 0; i < studentWithPoints.length; i++) {
+        let arrs = studentWithPoints[i];
+        points.push(arrs[1]);
+      }
+      //   console.log(points);
+      let sum = 0;
+      for (let j = 0; j < points.length; j++) {
+        sum += points[j];
+      }
+      let grade = sum / points.length;
+      //   console.log(grade);
+      if (grade > 60 && grade < 71) {
+        console.log(`
+        Your Grade GPA: ${grade}
+        Your sign: D
+        `);
+      } else if (grade > 70 && grade < 81) {
+        console.log(`
+        Your Grade GPA: ${grade}
+        Your sign: C
+        `);
+      } else if (grade > 80 && grade < 91) {
+        console.log(`
+        Your Grade GPA: ${grade}
+        Your sign: B
+        `);
+      } else if (grade > 90 && grade < 101) {
+        console.log(`
+        Your Grade GPA: ${grade}
+        Your sign: A
+        `);
+      } else {
+        console.log("Error 404 not found");
+      }
+    </script>
+  </body>
+</html>

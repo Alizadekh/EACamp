@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr = [56, 12];
+      let arr2 = [];
+      for (let i = 0; i < 100; i++) {
+        if (arr[0] % i == 0 && arr[1] % i == 0) {
+          arr2.push(i);
+        }
+      }
+      //   console.log(arr2);
+      let big = arr2[0];
+      for (let j = 1; j < arr2.length; j++) {
+        if (arr2[j] > big) {
+          big = arr2[j];
+        }
+      }
+      console.log(big);
+    </script>
+  </body>
+</html>

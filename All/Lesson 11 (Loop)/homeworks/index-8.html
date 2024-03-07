@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = [];
+      for (let i = 10; i < 100; i++) {
+        let fIndex = i.toString()[0];
+        let lIndex = i.toString()[1];
+        i = parseInt(fIndex ** 2) + parseInt(lIndex ** 2);
+        arr.push(i);
+      }
+      console.log(arr);
+    </script>
+  </body>
+</html>

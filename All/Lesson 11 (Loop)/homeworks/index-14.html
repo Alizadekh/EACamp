@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var text =
+        "Write a JavaScript program that displays the largest integer among two integers";
+      // var arr = [];
+      var splittedText = text.split(" ");
+      // console.log(splittedText);
+      for (let i = 0; i < splittedText.length; i++) {
+        for (let j = i + 1; j < splittedText.length; j++) {
+          var b = splittedText[i].length;
+          var a = splittedText[j].length;
+          if (a < b) {
+            var c = splittedText[j];
+            splittedText[j] = splittedText[i];
+            splittedText[i] = c;
+          }
+        }
+      }
+      var arr2 = splittedText.join(" ");
+      console.log(arr2);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var text =
+        "Write a JavaScript program that displays the largest integer among two integers";
+
+      var splittedText = text.split("");
+      //   console.log(splittedText);
+      for (let i = 0; i < splittedText.length; i++) {
+        let index = splittedText.indexOf("a");
+        // console.log(index);
+        if (index !== -1) {
+          splittedText[index] = "x";
+        }
+      }
+      console.log(splittedText.toString().replaceAll(",", ""));
+
+      /*
+           let arr = [];
+           for (let i = 0; i < text.length; i++) {
+             arr.push(text[i]);
+           }
+           //   console.log(arr);
+           for (let j = 0; j < arr.length; j++) {
+             if (arr.indexOf(j) == "a") {
+               arr.indexOf(j) == "x";
+             }
+           }
+           console.log(arr);
+      */
+      //   let arr = [];
+      //   for (let i = 0; i < text.length; i++) {
+      //     arr.push(text[i]);
+      //   }
+      //   //   console.log(arr);
+      //   for (let j = 0; j < arr.length; j++) {
+      //     if (arr[j] == "a") {
+      //       arr
+      //     }
+      //   }
+      //   console.log(arr);
+
+      //   let arr = [];
+      //   let newtext;
+      //   for (let j = 0; j < text.length; j++) {
+      //     arr.push(text[j]);
+      //     for (let i = 0; i < arr.length; i++) {
+      //       if (arr[i] == "a") {
+      //         newtext = arr.replace(arr[i], "x");
+      //       }
+      //     }
+      //   }
+      //   console.log(toString(newtext));
+    </script>
+  </body>
+</html>
