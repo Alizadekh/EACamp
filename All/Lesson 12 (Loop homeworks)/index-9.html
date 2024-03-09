@@ -7,16 +7,14 @@
   </head>
   <body>
     <script>
-      var arr = [4, 2, 34, 4, 1, 12, 1, 4];
-      var arr2 = [];
+      var arr = [2, 45, 3, 67, 34, 567, 34, 345, 123];
+      var big = arr[0];
       for (let i = 0; i < arr.length; i++) {
-        if (arr2.includes(arr[i])) {
-          continue;
-        } else {
-          arr2.push(arr[i]); 
+        if (arr[i] > big) {
+          big = arr[i];
         }
       }
-      console.log(arr2);
+      console.log(big);
     </script>
   </body>
 </html>
