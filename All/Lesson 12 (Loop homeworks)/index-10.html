@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr = [6, 2, 1, 8, 10];
+      var newArr = [];
+      var bigNum = arr[0];
+      var smNum = arr[-1];
+      var sum = 0;
+      for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > bigNum) {
+          bigNum = arr[i];
+          arr.splice(i, 1);
+          // i--;
+        } else if (arr[i] < smNum) {
+          smNum = arr[i];
+          arr.splice(i, 1);
+          // i--;
+        } else {
+          newArr.push(arr[i]);
+        }
+      }
+      for (let j = 0; j < arr.length; j++) {
+        sum += newArr[j];
+      }
+      // console.log(newArr);
+      console.log(sum);
+    </script>
+  </body>
+</html>
