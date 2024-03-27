@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const myObj = {
+        name: "Aykhan",
+        surname: "Alizada",
+        age: 19,
+        isStudent: true,
+      };
+      console.log(
+        `${myObj["name"]} ${myObj["surname"]} is ${myObj["age"]} years old`
+      );
+
+      const myArr = Object.entries(myObj);
+      for (const [key, value] of myArr) {
+        console.log(key + " " + value);
+      }
+      const myKeys = Object.keys(myObj);
+      for (const key in myKeys) {
+        console.log(myKeys[key]);
+      }
+      const myValues = Object.values(myObj);
+      for (const value in myValues) {
+        console.log(myValues[value]);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .inputs {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        background-color: darkgray;
+      }
+      .boxes {
+        background-color: rgb(127, 255, 182);
+        border: 1px solid orange;
+        width: 50%;
+        padding: 5px 10px;
+      }
+      .boxes .box {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid orange;
+        padding: 2px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="inputs">
+      <label for="">Idman Novu: </label>
+      <input type="text" id="nov" placeholder="Idman Novu" />
+      <label for="">Mekan </label>
+      <input type="text" id="mekan" placeholder="Mekan" />
+      <label for="">Vaxt </label>
+      <input type="text" id="vaxt" placeholder="vaxt" />
+      <button id="btn">Elave et</button>
+    </div>
+    <div class="boxes" id="boxes"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>

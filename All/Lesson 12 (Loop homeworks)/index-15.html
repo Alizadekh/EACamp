@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   var arr = ["3:1", "2:2", "0:1", "0:2", "1:0", "2:3", "4:3", "1:1", "4:2"];
+      //   var win = 0;
+      //   var lose = 0;
+      //   var beraber = 0;
+      //   for (let i = 0; i < arr.length; i++) {
+      //     arr[i].split(",");
+      //     arr[i].trim('"');
+      //     console.log(arr[i]);
+
+      //     for (let j = 0; j < arr[i].length; j++) {
+      //       if (parseInt(arr[i][0]) > parseInt(arr[i][2])) {
+      //         win += 1;
+      //       } else if (parseInt(arr[i][0]) < parseInt(arr[i][2])) {
+      //         lose += 1;
+      //       } else if (parseInt(arr[i][0]) == parseInt(arr[i][2])) {
+      //         beraber += 1;
+      //       }
+      //     }
+      //   }
+      //   console.log(win);
+      //   console.log(lose);
+      //   console.log(beraber);
+
+      var arr = ["3:1", "2:2", "0:1", "0:2", "1:0", "2:3", "4:3", "1:1", "4:2"];
+      var win = 0;
+      var lose = 0;
+      var beraber = 0;
+      for (let i = 0; i < arr.length; i++) {
+        arr[i].split(",");
+        arr[i].trim('"');
+        if (parseInt(arr[i][0]) > parseInt(arr[i][2])) {
+          win += 1;
+        } else if (parseInt(arr[i][0]) < parseInt(arr[i][2])) { 
+          lose += 1;
+        } else if (parseInt(arr[i][0]) == parseInt(arr[i][2])) {
+          beraber += 1;
+        }
+      }
+      console.log(win);
+      console.log(lose);
+      console.log(beraber);
+    </script>
+  </body>
+</html>

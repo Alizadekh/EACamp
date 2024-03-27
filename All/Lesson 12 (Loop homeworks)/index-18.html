@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let boyukededsayi = 0;
+      let kicikededsayi = 0;
+      var str =
+        "In this Kata, a string is said to be in ALL CAPS whenever it does not contain any lowercase letter so any string containing no letters at all is trivially considered to be in ALL CAPS";
+      for (let i = 0; i < str.length; i++) {
+        if (str[i].toLowerCase() == str[i]) {
+          kicikededsayi += 1;
+        }
+        if (str[i].toUpperCase() == str[i]) {
+          boyukededsayi += 1;
+        }
+        // console.log(str[i].toLowerCase());
+      }
+      console.log(boyukededsayi);
+      console.log(kicikededsayi);
+
+      //   var str =
+      //     "In this Kata, a string is said to be in ALL CAPS whenever it does not contain any lowercase letter so any string containing no letters at all is trivially considered to be in ALL CAPS";
+      //     var boyukededler = 'QWERTYUIOPASDFGHJKLZXCVBNM'
+      //     var kicikededler = 'qwertyuiopasdfghjkl'
+    </script>
+  </body>
+</html>
